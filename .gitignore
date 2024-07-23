@@ -233,4 +233,8 @@ $RECYCLE.BIN/
 
 
 # ipynb 
-.ipynb
+*.ipynb
+
+# data
+*.npy
+
