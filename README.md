@@ -194,15 +194,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/PINN-SImulation.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Choi-jun-ho/PINN-SImulation.svg?style=for-the-badge
 [contributors-url]: https://github.com/Choi-jun-ho/PINN-SImulation/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/PINN-SImulation.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Choi-jun-ho/PINN-SImulation.svg?style=for-the-badge
 [forks-url]: https://github.com/Choi-jun-ho/PINN-SImulation/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/PINN-SImulation.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Choi-jun-ho/PINN-SImulation.svg?style=for-the-badge
 [stars-url]: https://github.com/Choi-jun-ho/PINN-SImulation/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/PINN-SImulation.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Choi-jun-ho/PINN-SImulation.svg?style=for-the-badge
 [issues-url]: https://github.com/Choi-jun-ho/PINN-SImulation/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/PINN-SImulation.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Choi-jun-ho/PINN-SImulation.svg?style=for-the-badge
 [license-url]: https://github.com/Choi-jun-ho/PINN-SImulation/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/%EC%A4%80%ED%98%B8-%EC%B5%9C-58b64323a/
