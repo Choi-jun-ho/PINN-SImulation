@@ -476,4 +476,70 @@ def save_sampled_kindec_data(data, time):
 
 # save_sampled_kindec_data(data, time)
 
+# %%
+def sorted_data(data):
+    temp = pd.DataFrame(data, columns=['kind', 'time', 'x', 'y', 'z', 'value_kind'])
+    temp = temp.sort_values(by=['kind', 'time', 'x', 'y', 'z'])
+    temp.reset_index(inplace=True, drop=True)
+    
+    return temp.to_numpy()
+
+
+def get_sampled_data():
+    temp_data = np.load('sampled_kinded_'+data_kind[1]+"_"+value_kind[1]+".npy")
+    print("temp load complete")
+    temp_data = sorted_data(temp_data)
+    print("temp_data.shape: ", temp_data.shape)
+    
+    temp_np = np.empty((temp_data.shape[0]*2, 5+8), dtype=np.float64) 
+    print("temp_np.shape: ", temp_np.shape)
+
+    temp_np[:temp_data.shape[0], 0:6] = temp_data[:, 0:6]
+
+    print("===============multi===================")
+    
+    for particle in Particle:
+        if  particle.value == 1:
+            continue
+        print("particle: ", particle)
+        temp = np.load('sampled_kinded_'+data_kind[1]+"_"+value_kind[particle.value]+".npy")
+        temp = sorted_data(temp)
+        print("temp.shape: ", temp.shape)
+        temp_np[:temp_data.shape[0], 4+particle.value] = temp[:, 5]
+
+    temp_data = np.load('sampled_kinded_'+data_kind[2]+"_"+value_kind[1]+".npy")
+    print("temp :" , temp_data[0, :])
+    print("temp load complete")
+    temp_data = sorted_data(temp_data)
+
+    temp_np[temp_data.shape[0]:, 0:6] = temp_data[:, 0:6]
+
+    print("===============room===================")
+    
+    for particle in Particle:
+        if  particle.value == 1:
+            continue
+        print("particle: ", particle)
+        temp = np.load('sampled_kinded_'+data_kind[2]+"_"+value_kind[particle.value]+".npy")
+        print("temp :" , temp[0, :])
+        temp = sorted_data(temp)
+        print("temp.shape: ", temp.shape)
+        temp_np[temp_data.shape[0]:, 4+particle.value] = temp[:, 5]
+    
+    print("complete")
+    return temp_np
+
+def save_sampled_data():
+    sampled_data = get_sampled_data()          
+    np.save('sampled_data', sampled_data)
+
+def load_sampled_data():
+    return np.load('sampled_data.npy')
+
+# save_sampled_data()
+
+
+# %%
+pd.DataFrame(load_sampled_data())
+
 
