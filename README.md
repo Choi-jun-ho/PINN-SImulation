@@ -119,8 +119,8 @@
 
 1. [FDS(Fire Dynamics Simulator)](https://pages.nist.gov/fds-smv/downloads.html) 설치
     - bundle 설치
-2. ./apartment_multi 폴더에서 fds 실행
-3. ./apartment_room 폴더에서 fds 실행
+2. ./apartment_multi 폴더에서 Apartment_place2.fds 실행
+3. ./apartment_room 폴더에서 Apartment_multi_case.fds 실행
 4. git cloe
    ```sh
    git clone https://github.com/Choi-jun-ho/PINN-SImulation.git
