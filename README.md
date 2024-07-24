@@ -95,6 +95,13 @@
 
 * [![Python][Python.com]][Python-url]
 * [![Pytorch][Pytorch.com]][Pytorch-url]
+* vscode
+* numpy
+* deepxde
+* matplotlib
+* pandas
+* tqdm
+* numba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,6 +132,9 @@
    ```sh
    git clone https://github.com/Choi-jun-ho/PINN-SImulation.git
    ```
+5. vscode ctrl+shift+p >Jupyter: Export Current Python File as Jupyter Notebook
+6. 실행관련된 주석 제거후 순차적 실행
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
