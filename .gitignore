@@ -238,3 +238,26 @@ $RECYCLE.BIN/
 # data
 *.npy
 
+# fds 
+*.gbnd
+*.fed_smv
+*.ini
+*.mat
+*.bnd
+*.bf
+*.sf
+*.out
+*.smv
+*.s3d
+*.s3d.sz
+*iso
+*cpu.csv
+*log.csv
+*git.txt
+*steps.csv
+*hrr.csv
+apartment_room/Apartment_blender.fds
+fig/*
+video/*
+*/*devc.csv
+*devc.csv
