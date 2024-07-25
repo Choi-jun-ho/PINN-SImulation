@@ -90,11 +90,19 @@
 
 
 
+
 ### Built With
 
 
 * [![Python][Python.com]][Python-url]
 * [![Pytorch][Pytorch.com]][Pytorch-url]
+* vscode
+* numpy
+* deepxde
+* matplotlib
+* pandas
+* tqdm
+* numba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,12 +127,15 @@
 
 1. [FDS(Fire Dynamics Simulator)](https://pages.nist.gov/fds-smv/downloads.html) 설치
     - bundle 설치
-2. ./apartment_multi 폴더에서 fds 실행
-3. ./apartment_room 폴더에서 fds 실행
+2. ./apartment_multi 폴더에서 Apartment_place2.fds 실행
+3. ./apartment_room 폴더에서 Apartment_multi_case.fds 실행
 4. git cloe
    ```sh
    git clone https://github.com/Choi-jun-ho/PINN-SImulation.git
    ```
+5. vscode ctrl+shift+p >Jupyter: Export Current Python File as Jupyter Notebook
+6. 실행관련된 주석 제거후 순차적 실행
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,6 +169,43 @@ See the [open issues](https://github.com/Choi-jun-ho/PINN-SImulation/issues) for
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Coding Convention
+
+### Commit Convention
+- Feat : 새로운 기능에 대한 커밋
+- Modify: 내용 수정
+- Remove: 내용 삭제 (폴더나 파일)
+- Dir: 폴더 및 파일 구조 변경
+- Fix : 버그 수정에 대한 커밋
+- Build : 빌드 관련 파일 수정에 대한 커밋
+- Chore : 그 외 자잘한 수정에 대한 커밋
+- Ci : CI 관련 설정 수정에 대한 커밋
+- Docs : 문서 수정에 대한 커밋
+- Style : 코드 스타일 혹은 포맷 등에 관한 커밋
+- Refactor : 코드 리팩토링에 대한 커밋
+- Test : 테스트 코드 수정에 대한 커밋
+- Init: 시스템 초기 설정
+
+### Example
+
+> <제목>
+Feat: 관심지역 알림 ON/OFF 기능 추가(#123)
+> 
+> 
+> 
+> <본문>
+> 커밋 메시지 본문으로 "왜", "무엇을 위해", "어떻게" 변경했는지와 상세 내용 추가 설명하기
+> 
+> <꼬릿말>
+> 
+> - Fixes: 이슈 수정중 (아직 해결되지 않은 경우)
+> - Resolves: 이슈를 해결했을 때 사용
+> - Ref: 참고할 이슈가 있을 때 사용
+> - Related to: 해당 커밋에 관련된 이슈번호 (아직 해결되지 않은 경우)
+
+#### Branch Convention
+
+- feture, develop, release, hotfix,main
 
 <!-- LICENSE -->
 ## License
